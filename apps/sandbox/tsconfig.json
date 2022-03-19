@@ -1,0 +1,4 @@
+{
+  "extends": "@utool/config/tsconfig.json",
+  "include": ["./src"]
+}

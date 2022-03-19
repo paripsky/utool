@@ -1,0 +1,22 @@
+{
+  "name": "@utool/config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "private": true,
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  },
+  "exports": {
+    "./vite.config": "./vite.config.js",
+    "./tsconfig.json": "./tsconfig.json",
+    "./.eslintrc": "./.eslintrc.js",
+    "./.prettierrc": "./.prettierrc.js"
+  }
+}

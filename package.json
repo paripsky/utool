@@ -1,0 +1,33 @@
+{
+  "name": "utool",
+  "version": "0.0.1",
+  "description": "A util manager",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @utool/api\" \"npm run dev -w @utool/app\" \"npm run dev -w @utool/sandbox\"",
+    "build": "cross-env NODE_ENV=production npm run build -w @utool/api && npm run build -w @utool/app && npm run build -w @utool/sandbox",
+    "start:api": "cross-env NODE_ENV=production npm run start -w @utool/api",
+    "test": "test",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "repourl.com"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "paripsky",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
