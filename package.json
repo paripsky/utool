@@ -7,6 +7,8 @@
     "dev": "concurrently \"npm run dev -w @utool/api\" \"npm run dev -w @utool/app\" \"npm run dev -w @utool/sandbox\"",
     "lint": "concurrently \"npm run lint -w @utool/api\" \"npm run lint -w @utool/app\" \"npm run lint -w @utool/sandbox\"",
     "build": "cross-env NODE_ENV=production npm run build -w @utool/api && npm run build -w @utool/app && npm run build -w @utool/sandbox",
+    "build:app-api": "cross-env NODE_ENV=production npm run build -w @utool/api && npm run build -w @utool/app",
+    "build:sandbox": "cross-env NODE_ENV=production npm run build -w @utool/sandbox",
     "start": "cross-env NODE_ENV=production npm run start -w @utool/api",
     "test": "test",
     "prepare": "husky install"
