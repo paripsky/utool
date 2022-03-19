@@ -33,9 +33,8 @@ const UtilPage: React.FC<UtilPageProps> = ({}) => {
     },
   ]);
 
-  const url = `${
-    import.meta.env.VITE_EMBED_URL
-  }/${authorId}/${itemId}?colorMode=${colorMode}`;
+  // }/${authorId}/${itemId}?colorMode=${colorMode}`;
+  const url = `${import.meta.env.VITE_EMBED_URL}?colorMode=${colorMode}`;
 
   const onIframeLoad = () => {
     setShowIframe(true);
