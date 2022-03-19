@@ -1,1 +1,10 @@
-export { default } from "@utool/config/vite.config";
+// import react from '@vitejs/plugin-react';
+// import { defineConfig } from 'vite';
+const react = require('@vitejs/plugin-react');
+const { defineConfig } = require('vite');
+
+// https://vitejs.dev/config/
+module.exports = defineConfig({
+  plugins: [react()],
+  base: '/utool/',
+});
