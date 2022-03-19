@@ -1,11 +1,9 @@
 import { Box, Button, useColorMode } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
-export type UtilPageProps = {};
-
-const UtilPage: React.FC<UtilPageProps> = ({}) => {
-  const { authorId, itemId } = useParams();
+const UtilPage: React.FC = () => {
+  // const { authorId, itemId } = useParams();
   const [showIframe, setShowIframe] = useState(false);
   const { colorMode } = useColorMode();
   const iframeRef = useRef<HTMLIFrameElement | null>(null);

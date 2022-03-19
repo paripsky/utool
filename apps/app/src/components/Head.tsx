@@ -5,12 +5,12 @@ type HeadProps = {
   title?: string;
 };
 
-const Head: React.FC<HeadProps> = ({ title = 'kodkod' }) => {
+const Head: React.FC<HeadProps> = ({ title = 'utool' }) => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
       <title>{title}</title>
-      <meta name="description" content="Find the latest libraries and frameworks" />
+      <meta name="description" content="A place to find and build utilities" />
       <link rel="icon" href="/favicon.ico" />
     </Helmet>
   );
