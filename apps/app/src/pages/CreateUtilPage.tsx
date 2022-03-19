@@ -37,9 +37,7 @@ const CreateUtilPage: React.FC<CreateUtilPageProps> = () => {
   const [monacoTheme, setMonacoTheme] = useState('vs-dark');
   const [iframeKey, setIframeKey] = useState(0);
 
-  const url = `${
-    import.meta.env.VITE_EMBED_URL
-  }/builtins/playground?colorMode=${colorMode}`;
+  const url = `${import.meta.env.VITE_EMBED_URL}?colorMode=${colorMode}`;
 
   const sendCodeToIframe = () => {
     // TODO: change target origin
